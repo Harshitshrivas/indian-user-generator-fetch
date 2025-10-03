@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian User Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Indian User Generator</h1>
+        <p class="subtitle">Fetching random users from India</p>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching Indian user data...</p>
+        </div>
+        
+        <div class="error" id="error"></div>
+        
+        <div class="user-card" id="userCard">
+            <img id="userPhoto" class="user-photo" src="" alt="User Photo">
+            <h2 id="userName" class="user-name">Loading...</h2>
+            <p id="userEmail" class="user-email">Loading...</p>
+            
+            <div class="user-details">
+                <div class="detail-item">
+                    <div class="detail-label">Gender</div>
+                    <div class="detail-value" id="userGender">-</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Age</div>
+                    <div class="detail-value" id="userAge">-</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Location</div>
+                    <div class="detail-value" id="userLocation">-</div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="getUserBtn">Get New Indian User</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
